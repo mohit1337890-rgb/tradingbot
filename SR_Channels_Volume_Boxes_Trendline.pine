@@ -1,9 +1,9 @@
+//@version=6
 // This source code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
 // Combined: Support Resistance Channels (© LonesomeTheBlue)
 //         + Support and Resistance High Volume Boxes / Breaks & Retests (© ChartPrime)
 //         + Auto Trendlines (added for reversal / breakout confirmation)
 
-//@version=6
 indicator('SR Channels + Volume Boxes + Trendline', 'SR Combo TL', overlay = true, max_bars_back = 501, max_boxes_count = 500, max_lines_count = 500, max_labels_count = 500)
 
 // =====================================================================================================================
