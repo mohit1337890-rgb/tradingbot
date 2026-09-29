@@ -243,10 +243,10 @@ calcSupportResistance(src, lookbackPeriod) =>
     var color sup_color = na
     var float multi = na
 
-    var bool brekout_res = na
-    var bool brekout_sup = na
-    var bool res_holds = na
-    var bool sup_holds = na
+    var bool brekout_res = false
+    var bool brekout_sup = false
+    var bool res_holds = false
+    var bool sup_holds = false
 
     // Find pivot points
     pivotHigh = ta.pivothigh(src, lookbackPeriod, lookbackPeriod)
@@ -322,8 +322,8 @@ calcSupportResistance(src, lookbackPeriod) =>
 
 
 // Check if Resistance become Support or Support Become Resistance
-var bool res_is_sup = na
-var bool sup_is_res = na
+var bool res_is_sup = false
+var bool sup_is_res = false
 
 switch
     brekout_res => res_is_sup := true
